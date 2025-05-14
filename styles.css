@@ -1,0 +1,160 @@
+/* Header */
+header {
+  background: #1a1a1a;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url('photos/logo.jpeg') center center no-repeat;
+  background-size: cover; /* Makes image fit fully */
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem 3rem; /* More top space, less bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Push content down */
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 2rem; /* Keeps button from hugging bottom too tight */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+}
+
+.cta-button:hover {
+  background: black;
+  color: white;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.feature {
+  max-width: 250px;
+}
+
+.feature img {
+  margin-bottom: 1rem;
+}
+
+/* About Preview */
+.about-preview {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.secondary-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #080808;
+  color: #070707;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.secondary-button:hover {
+  background-color: #111111;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding: 4rem 1rem 2rem;
+    background-size: cover;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
