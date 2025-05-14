@@ -1,0 +1,175 @@
+/* Header */
+header {
+  background: #1a1a1a;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url('photos/green.jpeg') center top no-repeat;
+  background-size: contain;
+  background-color: rgba(248, 242, 242, 0.85);
+  color: rgb(106, 238, 176);
+  text-align: center;
+  padding: 2rem 1rem;
+  height: 60vh; /* fixes height on mobile */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto 0;
+  background: rgb(24, 18, 18);
+  color: rgb(243, 238, 238);
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+  border: none;
+}
+
+.cta-button:hover,
+.cta-button:focus,
+.cta-button:active,
+.cta-button:visited {
+  background: black;
+  color: rgb(243, 238, 238);
+  outline: none;
+  text-decoration: none;
+}
+
+
+.cta-button:hover {
+  background: black;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.feature {
+  max-width: 250px;
+}
+
+.feature img {
+  margin-bottom: 1rem;
+}
+
+/* About Preview */
+.about-preview {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.secondary-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #080808;
+  color: #070707;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.secondary-button:hover {
+  background-color: #111111;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .hero {
+    height: 50vh; /* shorter height on small phones */
+    background-size: 80% auto;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cta-button {
+  -webkit-tap-highlight-color: transparent; /* Remove red flash on tap */
+  -webkit-focus-ring-color: transparent;    /* Remove red outline on focus (Chrome) */
+  outline: none;                            /* Remove generic focus border */
+}
