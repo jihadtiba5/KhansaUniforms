@@ -9,46 +9,49 @@ header {
   align-items: center;
 }
 
+/* Logo + Title */
 .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-weight: bold;
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation */
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: white;
-  margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.3rem 0.6rem;
 }
 
 /* Hero Section */
 .hero {
   background: url('photos/logo.jpeg') center center no-repeat;
-  background-size: 200px; /* Makes image fit fully */
+  background-size: 200px;
   background-color: #000000;
   color: white;
   text-align: center;
-  padding: 6rem 2rem 3rem; /* More top space, less bottom */
+  padding: 6rem 2rem 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Push content down */
+  justify-content: flex-end;
   align-items: center;
-  min-height: 100vh; /* Full viewport height */
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  min-height: 100vh;
 }
 
 .cta-button {
@@ -61,7 +64,7 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   font-size: 1rem;
-  margin-bottom: 2rem; /* Keeps button from hugging bottom too tight */
+  margin-bottom: 2rem;
   -webkit-tap-highlight-color: transparent;
   -webkit-focus-ring-color: transparent;
   outline: none;
@@ -130,8 +133,14 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   header {
-    align-items: flex-start;
+    align-items: center;
     padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
   }
 
   .hero {
@@ -140,7 +149,6 @@ footer {
     background-size: contain;
   }
 
-  
   .cta-button {
     font-size: 0.9rem;
     padding: 0.6rem 1.2rem;
