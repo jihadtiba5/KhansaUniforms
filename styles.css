@@ -1,0 +1,174 @@
+/* Header */
+header {
+  background: #211f1f;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo + Title */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+}
+
+/* Hero Section */
+.hero {
+  background: url('photos/logo.jpeg') center center no-repeat;
+  background-size: 200px;
+  background-color: #211f1f;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-focus-ring-color: transparent;
+  outline: none;
+}
+
+.cta-button:hover {
+  background: black;
+  color: white;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.feature {
+  max-width: 250px;
+}
+
+.feature img {
+  margin-bottom: 1rem;
+}
+
+.features p {
+  
+  line-height: 2;
+}
+
+
+/* About Preview */
+.about-preview {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-preview p {
+  line-height: 2;
+}
+
+
+.secondary-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #080808;
+  color: #070707;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.secondary-button:hover {
+  background-color: #111111;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  /* Don't change nav to column — keep links side by side */
+  nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .hero {
+    min-height: 50vh;
+    padding: 4rem 1rem 1rem;
+    background-size: contain;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
