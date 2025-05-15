@@ -29,7 +29,7 @@ nav a {
 /* Hero Section */
 .hero {
   background: url('photos/logo.jpeg') center center no-repeat;
-  background-size: cover; /* Makes image fit fully */
+  background-size: contain; /* Makes image fit fully */
   background-color: #000000;
   color: white;
   text-align: center;
