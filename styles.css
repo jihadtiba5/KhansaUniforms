@@ -137,10 +137,13 @@ footer {
     padding: 1rem;
   }
 
+  /* Don't change nav to column — keep links side by side */
   nav {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0.5rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .hero {
